@@ -1,0 +1,96 @@
+/* Base Styles */
+.footer-container {
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #DBE8FF;
+    font-family: 'Matter', sans-serif; /* Ensure consistent font-family */
+    border-radius: 8px;
+  }
+  
+  body {
+    font-family: 'Matter', sans-serif; /* Ensure consistent font-family */
+  }
+  
+  .footer-containers {
+    background-color: #F4F7FC;
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .footer-container p {
+    font-family: 'Matter', sans-serif; /* Ensure consistent font-family */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    font-family: 'Matter', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #0167FF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(1, 103, 255, 0.5);
+  }
+  
+  .cta-button:hover {
+    background-color: #014bb7;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  .cta-button:focus {
+    box-shadow: 0 0 0 3px rgba(1, 103, 255, 0.5);
+  }
+  
+  /* Timer Styles */
+  .timer-container {
+    display: flex;
+    gap: 15px; /* Increased gap between timer boxes */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    justify-content: center;
+  }
+  
+  .timer-box {
+    width: 120px; /* Increased width */
+    height: 120px; /* Increased height */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 421px) {
+    .timer-container {
+      flex-direction: row;
+      gap: 10px;
+      margin-bottom: 20px;
+      width: 300px; /* Adjusted width to fit smaller screens */
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .timer-box {
+      width: 80px; /* Adjusted width for smaller screens */
+      height: 80px; /* Adjusted height for smaller screens */
+    }
+  }
+  
